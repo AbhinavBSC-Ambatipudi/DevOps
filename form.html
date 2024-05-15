@@ -1,0 +1,192 @@
+<head>
+    <style>
+      h1 {
+        font-family: monospace;
+        font-size: 40px;
+        border-radius: 10px;
+        padding-left: 35%;
+      }
+      h3 {
+        font-family: monospace;
+        font-size: 18px;
+        border-radius: 10px;
+        background-color: aquamarine;
+        border-style: dotted;
+        text-align: center;
+        width: 250px;
+        height: 25px;
+        margin-left: 22%;
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+      .sname,
+      .email1,
+      .rno1,
+      .age1,
+      .year1,
+      .choice1 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 17px;
+        padding-left: 5px;
+        text-transform: uppercase;
+      }
+      .name-box,
+      .age,
+      .year,
+      .choice {
+        border: 2px solid black;
+        border-radius: 4px;
+        width: 200px;
+        height: 30px;
+        font-family: monospace;
+        background-color: lightgoldenrodyellow;
+      }
+      .email,
+      .rno {
+        border: 2px solid black;
+        border-radius: 4px;
+        width: 300px;
+        height: 30px;
+        font-family: monospace;
+        background-color: lightgoldenrodyellow;
+      }
+      .form {
+        background-color: lightgray;
+        padding-left: 2%;
+        margin-right: 55%;
+        border-radius: 20px;
+        border: 2px solid black;
+        height: 58%;
+      }
+      .flex {
+        display: flex;
+        column-gap: 10px;
+      }
+      .cl-em {
+        display: flex;
+        column-gap: 20px;
+      }
+      .age-year-class {
+        display: flex;
+        column-gap: 5px;
+      }
+      .submit-button {
+        border-radius: 5px;
+        font-family: sans-serif;
+        border-style: initial;
+        margin-left: 40%;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <form class="form">
+      <h1>DEV-OPS</h1>
+      <h3>COURSE REGISTRATION FORM</h3>
+      <label class="sname">STUDENT NAME</label>
+      <br />
+      <div class="flex">
+        <div class="flex-item">
+          <input
+            required
+            class="name-box"
+            type="text"
+            id="first_name"
+            name="first_name"
+            placeholder="FIRST NAME"
+            maxlength="15"
+          />
+        </div>
+  
+        <div class="flex-item">
+          <input
+            class="name-box"
+            type="text"
+            id="middle_name"
+            name="middle name"
+            placeholder="MIDDLE NAME"
+            maxlength="15"
+          />
+        </div>
+        <div class="flex-item">
+          <input
+            required
+            class="name-box"
+            type="text"
+            id="last_name"
+            name="last name"
+            placeholder="LAST NAME"
+            maxlength="15"
+          />
+        </div>
+      </div>
+      <br />
+      <div class="cl-em">
+        <div>
+          <label class="rno1">ROLL NO</label><br />
+  
+          <input
+            class="rno"
+            required
+            type="text"
+            id="rno"
+            placeholder="ex: 21261Axxxx"
+          />
+        </div>
+  
+        <div>
+          <label class="email1">STUDENT E-MAIL</label><br />
+          <input
+            required
+            class="email"
+            type="text"
+            id="user_name"
+            name="user_name"
+            placeholder="ex: myname@mgit.ac.in"
+          />
+        </div>
+      </div>
+      <br />
+  
+      <div class="age-year-class">
+        <div>
+          <label class="age1" for="age">AGE</label><br />
+          <input class="age" min="18" type="number" id="age" name="age" />
+        </div>
+        <br />
+  
+        <div>
+          <label class="year1" for="year">YEAR</label><br />
+          <input class="year" name="year" list="year" />
+          <datalist id="year">
+            <option value="I"></option>
+            <option value="II"></option>
+            <option value="III"></option>
+            <option value="IV"></option>
+          </datalist>
+        </div>
+  
+        <div>
+          <label class="choice1" for="choice">COURSE</label><br />
+          <input required class="choice" name="choice" list="choice" />
+          <datalist id="choice">
+            <option value="CLASS"></option>
+            <option value="LAB"></option>
+          </datalist>
+        </div>
+      </div>
+      <br />
+      <div>
+        <input
+          class="submit-button"
+          type="submit"
+          id="submit"
+          name="submit"
+          value="SUBMIT"
+        />
+      </div>
+      <br />
+    </form>
+  </body>
+  
